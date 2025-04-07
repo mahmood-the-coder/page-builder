@@ -1,0 +1,31 @@
+.editorLayout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.editorLayoutLeft{
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+
+.editorLayoutRight{
+    height: 100%;
+    width: 85%;
+    background-color: blue;
+}
+.editorLayoutResizeHandle{
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: purple;
+    cursor: ew-resize;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.editorLayoutResizeHandle:hover{
+    opacity: 1;
+}
