@@ -1,19 +1,10 @@
 import "./layout.css"
+import { leftContainer } from "./leftContainer";
+import { resizeHandle } from "./resizeHandle";
+import { rightContainer } from "./rightContainer";
 const MIN_WIDTH=50;
 const layout=document.createElement("div");
 layout.classList.add("editorLayout");
-
-const resizeHandle=document.createElement("div");
-resizeHandle.classList.add("editorLayoutResizeHandle");
-
-const leftContainer=document.createElement("div");
-leftContainer.classList.add("editorLayoutLeft");
-
-leftContainer.append(resizeHandle)
-
-const rightContainer=document.createElement("div");
-rightContainer.classList.add("editorLayoutRight");
-
 
 layout.append(leftContainer,rightContainer)
 document.body.querySelector(".editor")?.append(layout)

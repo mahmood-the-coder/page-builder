@@ -7,6 +7,7 @@
     width: 15%;
     height: 100%;
     background-color: red;
+    overflow-x: hidden;
 }
 
 .editorLayoutRight{
@@ -24,6 +25,7 @@
     cursor: ew-resize;
     opacity: 0;
     transition: opacity 200ms ease-in-out;
+    z-index: 10;
 }
 
 .editorLayoutResizeHandle:hover{

@@ -1,0 +1,33 @@
+.tabs{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    grid-template-rows: 35px 1fr;
+}
+
+.tabsButtons
+{
+    grid-area:2/1/3/2;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border-right: 1px solid var(--editor-color);
+}
+.tab{
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: chartreuse;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-area: 2/2/3/3;
+}
